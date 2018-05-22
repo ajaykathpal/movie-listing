@@ -1,0 +1,41 @@
+creating new virtual env:
+python3 -m venv env_name
+or
+python -m venv --without-pip env_name
+
+
+//execute activate.bat to enter your virtual environment in Scripts folder
+
+//installing django in current virtual environmnet
+pip install django		// make sure pip is available in script folder
+
+
+//creating a project
+django-admin startproject project_name
+
+//running server 
+python manage.py runserver		// this is development server do not use this for production(TO learn)
+
+//displaying migrations
+python manage.py showmigrations
+
+//running migrations
+python manage.py migrate
+
+//making migrations
+python manage.py makemigrations
+
+//running single migration
+pyhton manage.py sqlmigrate app_name 0001(migration to be executed)
+
+//creating a new app
+python manage.py startapp app_name
+
+
+//creating a superuser for django admin
+python manage.py createsuperuser
+
+//starting repl in virtual env
+python manage.py shell
+
+
